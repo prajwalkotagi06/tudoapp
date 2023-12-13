@@ -5,6 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 // import { IconButton } from '@material-ui/core';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
+import UpdateIcon from '@mui/icons-material/Update';
+
 
 const style = makeStyles((theme) =>({
     con:{
@@ -30,6 +33,11 @@ const style = makeStyles((theme) =>({
         marginTop: '10px',
         
 
+    },
+    da:{ 
+        span: {
+            left: '200px',
+        }
     }
 
 
@@ -51,7 +59,17 @@ function Tudoapp() {
                         <AddIcon />
                     </Fab>
                 </div>
-                
+                <div className='da'>
+                    <span>id</span>
+                    <span>list</span>
+                    <Fab color="primary" aria-label="Remove">
+                        <DeleteIcon />
+                    </Fab>
+                    <Fab  color='primary' aria-label='Update'>
+                        <UpdateIcon />
+                    </Fab>
+
+                </div>
             </Container>
         </CssBaseline>
     </>
